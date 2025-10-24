@@ -1,4 +1,3 @@
-import React from 'react';
 import './index.css';
 import Navbar from './components/layout/Navbar';
 import Home from './components/Home';
