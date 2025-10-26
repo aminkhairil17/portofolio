@@ -7,18 +7,23 @@ const Skills: React.FC = () => {
       { name: 'TypeScript', level: 85 },
       { name: 'JavaScript', level: 95 },
       { name: 'Tailwind CSS', level: 88 },
+      { name: 'Boostrap', level: 88 },
     ],
     backend: [
       { name: 'Node.js', level: 80 },
-      { name: 'Python', level: 75 },
+      { name: 'Laravel', level: 75 },
       { name: 'Express', level: 82 },
       { name: 'MongoDB', level: 78 },
+      { name: 'Mysql', level: 78 },
+      { name: 'PostgreSql', level: 78 },
+
     ],
     tools: [
       { name: 'Git', level: 90 },
       { name: 'Docker', level: 70 },
-      { name: 'AWS', level: 65 },
-      { name: 'Figma', level: 75 },
+      { name: 'proxmox', level: 85 },
+      { name: 'Aapanel', level: 75 },
+      { name: 'Cloudflare', level: 75 },
     ]
   };
 

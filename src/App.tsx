@@ -1,4 +1,5 @@
 import './index.css';
+import logo from './assets/logo.svg';
 import Navbar from './components/layout/Navbar';
 import Home from './components/Home';
 import About from './components/About';
