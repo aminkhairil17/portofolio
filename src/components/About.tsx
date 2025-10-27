@@ -41,13 +41,23 @@ const About: React.FC = () => {
               minimal effort.
             </p>
             <div className="pt-4">
-              <button className="btn-secondary">Download Resume</button>
+              <a 
+              href="/CV.pdf" 
+              download
+              className="btn-secondary inline-block"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('/CV.pdf', '_blank');
+              }}
+              >
+              Download Resume
+              </a>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  );
-};
+          </div>
+        </section>
+        );
+      };
 
-export default About;
+      export default About;
