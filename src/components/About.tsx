@@ -307,7 +307,7 @@ const About: React.FC = () => {
           {/* Education Tab */}
           {activeTab === "education" && (
             <div className="animate-fade-in">
-              {educationData.map((edu, index) => (
+              {educationData.map((edu) => (
                 <div
                   key={edu.id}
                   className="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-200 dark:border-gray-700"

@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             Building efficient systems that drive productivity and smarter
             decisions.
           </p>
-          <button className="btn-primary text-lg">View My Work</button>
+          <a href="#projects" className="btn-primary text-lg inline-block">View My Work</a>
         </div>
       </div>
     </section>
