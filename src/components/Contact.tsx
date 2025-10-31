@@ -5,12 +5,14 @@ interface ContactForm {
   name: string;
   email: string;
   message: string;
+  hp: string;
 }
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState<ContactForm>({
     name: "",
     email: "",
+    hp: "",
     message: "",
   });
   const [isLoading, setIsLoading] = useState(false);
@@ -64,7 +66,7 @@ const Contact: React.FC = () => {
 
       console.log("Email sent successfully:", result);
       setIsSent(true);
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ name: "", email: "", message: "", hp: "" });
 
       // Reset success message after 5 seconds
       setTimeout(() => {
@@ -142,7 +144,7 @@ const Contact: React.FC = () => {
               >
                 Name *
               </label>
-              <input
+                <input
                 type="text"
                 id="name"
                 name="name"
@@ -152,18 +154,18 @@ const Contact: React.FC = () => {
                 disabled={isLoading || !hasValidCredentials}
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="Your name"
-              />
-            </div>
+                />
+              </div>
 
-            {/* Email Input */}
-            <div>
-              <label
+              {/* Email Input */}
+              <div>
+                <label
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-              >
+                >
                 Email *
-              </label>
-              <input
+                </label>
+                <input
                 type="email"
                 id="email"
                 name="email"
@@ -173,10 +175,31 @@ const Contact: React.FC = () => {
                 disabled={isLoading || !hasValidCredentials}
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 placeholder="your.email@example.com"
-              />
-            </div>
+                />
+              </div>
 
-            {/* Message Textarea */}
+              {/* Phone Number Input */}
+              <div>
+                <label
+                htmlFor="hp"
+                className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
+                Phone Number *
+                </label>
+                <input
+                type="tel"
+                id="hp"
+                name="hp"
+                value={formData.hp}
+                onChange={handleChange}
+                required
+                disabled={isLoading || !hasValidCredentials}
+                className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                placeholder="Your phone number"
+                />
+              </div>
+
+              {/* Message Textarea */}
             <div>
               <label
                 htmlFor="message"
