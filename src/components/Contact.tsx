@@ -57,6 +57,7 @@ const Contact: React.FC = () => {
         {
           from_name: formData.name,
           from_email: formData.email,
+          from_hp: formData.hp,
           message: formData.message,
           to_name: "Muhammad Khairil Amin",
           reply_to: formData.email,
