@@ -37,7 +37,7 @@ const About: React.FC = () => {
       id: 3,
       title: "Tenaga Ahli SIMRS",
       company: "RS IBU & ANAK PARADISE - Tanah Bumbu, Indonesia",
-      period: "Agustus 2024 – saat ini",
+      period: "Agustus 2025 – saat ini",
       description:
         "Mempersiapkan dan migrasi database untuk implementasi SIMGOS 2 RS, mengintegrasikan dengan Satu Sehat dan aplikasi BPJS Kesehatan.",
       technologies: ["SIMGOS 2", "System Integration", "Healthcare Systems"],

@@ -4,16 +4,16 @@ const Projects: React.FC = () => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "Live Antrian App",
       description:
         "A full-stack e-commerce solution with React, Node.js, and MongoDB",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+      technologies: ["Node.js", "Mysql", "Express", "bootstrap"],
       githubUrl: "https://github.com/yourusername/ecommerce",
-      liveUrl: "https://yourapp.com",
+      liveUrl: "https://newantrian.rsusyifamedika.co.id.com",
     },
     {
       id: 2,
-      title: "Task Management App",
+      title: "",
       description:
         "A collaborative task management application with real-time updates",
       technologies: ["React", "TypeScript", "Firebase", "Tailwind"],
